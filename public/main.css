@@ -1,0 +1,148 @@
+@media () {
+    body {
+        width: 100%;
+    }
+	.homePhotos img {
+		width: 100%;
+	}
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.caption {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: flex;
+}
+
+.form-text {
+  width: 100%;
+  height: 100px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.homePhotos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.homePhotos img {
+  max-width: 500px;
+    display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+}
+
+#inlineImage {
+  max-width: 500px;
+  height:auto;
+  width:100%;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('/photos/jumbotron.jpeg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-align: center;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+}
+.navigation {
+	color: #5e6166;
+	padding-left: 0px;
+	text-decoration: none;
+}
+
+.navigationDiv {
+	padding-left: 16px;
+}
+
+.paragraph {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background-color:#dee0e2;
+  padding: 10px;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+.paragraph-center {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#dee0e2;
+  padding: 10px;
+  width: 70%;
+}
+
+.photo-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#quoteBox {
+  margin: 20px;
+  background-color: #dee0e2;
+  padding: 10px;
+  justify-content: flex-end;
+  width: 25%;
+  max-height: 400px;
+}
+
+.secondHeader {
+	/*background-image: url('/photos/header.jpeg');*/
+  background-color: #669999;
+	height: 200px;
+	display: flex;
+  align-items: center;
+  background-size: cover;
+	text-align: center;
+}
+
+.secondHeader h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+}

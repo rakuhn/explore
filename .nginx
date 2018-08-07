@@ -1,0 +1,23 @@
+server {
+  server_name ruthanna.com;
+  
+  set $public 0;
+  if (-f $document_root/public$request_uri) {
+  	set $public 1;
+  	rewrite (.*) /public$1;
+  }
+  if ($public = 0) {
+  	rewrite (.*) /index.php;
+  }
+  
+  root /var/www/ruthanna.com;
+  location / {
+    try_files $uri $uri/ /index.php;
+  }
+  location ~ /\. {
+    deny all;
+  }
+  location ~ \.php$ {
+    fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+  }
+}
