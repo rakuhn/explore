@@ -13,6 +13,8 @@
 					<form "<?php echo htmlspecialchars($_SERVER['REQUEST_URI']);?>" method="post" role="form">
 						<input type="hidden" name="edit" value="<?php echo $result['id']?>">
 							<button type="submit">Edit</button>
+					</form>
+					<form "<?php echo htmlspecialchars($_SERVER['REQUEST_URI']);?>" method="post" role="form">
 						<input type="hidden" name="delete" value="<?php echo $result['id']?>">
 							<button type="submit">Delete</button>
 					</form>
